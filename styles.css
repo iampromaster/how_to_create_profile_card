@@ -1,0 +1,153 @@
+@import url("https://fonts.cdnfonts.com/css/poppins");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 130, 34);
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 500px;
+  height: 800px;
+  padding: 1rem;
+  border-radius: 2rem;
+  z-index: 5;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.7);
+}
+.card img {
+  width: 250px;
+  border-radius: 50%;
+  border: 10px solid white;
+  z-index: 5;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+.info-box {
+  font-size: 28px;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.socials i {
+  font-size: 32px;
+  padding: 8px;
+  border: 3px solid black;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.socials i:hover {
+  background-color: orange;
+  border: 3px solid transparent;
+  color: white;
+}
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+button {
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: black;
+  color: white;
+  border: 3px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+button:nth-of-type(2) {
+  background-color: white;
+  color: black;
+  border: 3px solid black;
+}
+button:hover {
+  background-color: white;
+  color: orange;
+  border: 3px solid orangered;
+}
+button:nth-of-type(2):hover {
+  background-color: orangered;
+  color: white;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  font-size: 24px;
+  margin-top: 1rem;
+}
+
+.column {
+  border-right: 2px solid black;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.column i {
+  font-size: 32px;
+}
+
+.column:first-of-type i {
+  color: red;
+}
+.column:nth-of-type(2) i {
+  color: blue;
+}
+.column:nth-of-type(3) i {
+  color: greenyellow;
+}
+.circles {
+  position: relative;
+}
+.cricle-1 {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 15rem;
+  height: 15rem;
+  background-color: orangered;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.cricle-2 {
+  position: absolute;
+  left: 15rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: orangered;
+  border-radius: 50%;
+  z-index: -1;
+}
